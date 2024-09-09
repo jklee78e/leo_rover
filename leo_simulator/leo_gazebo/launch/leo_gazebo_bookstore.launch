@@ -1,0 +1,16 @@
+<launch>
+
+  <include file="$(find leo_gazebo)/launch/leo_gazebo.launch"
+    pass_all_args="true"> 
+    <arg name="world_name" default="$(find turtlebot3_gazebo)/worlds/turtlebot3_house.world"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+    <arg name="x" default="-3.0"/>
+    <arg name="y" default="1.0"/>
+    <arg name="z" default="0.0"/>
+  </include>
+
+</launch>
